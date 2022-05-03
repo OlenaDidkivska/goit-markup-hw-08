@@ -1,0 +1,38 @@
+.contact-list {
+    display: flex;
+    align-content: center;
+    margin-left: auto;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    &__icon {
+        margin-right: 10px;
+        fill: currentColor;
+    }
+    
+    &__link {
+        text-decoration: none;
+        color: inherit;
+        @include transition(color);
+    }
+}
+
+.contact-list__item {
+    display: inline-flex;
+    align-items: center;
+    width: 161px;
+    color: $color-text-primary;
+    cursor: pointer;
+
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
+    
+    &:hover,
+    &:focus {
+        color: $color-accent;
+    }
+}
+
+
+

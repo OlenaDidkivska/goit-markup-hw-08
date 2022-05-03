@@ -1,0 +1,34 @@
+.page-footer {
+    padding: 60px 0;
+
+    background-color: $color-bk-footer;
+
+    &__container {
+        display: flex;
+    }
+    
+    &__logo {
+        display: inline-block;
+        margin-bottom: 20px;
+    
+        color: $color-logo-footer;
+    }
+    
+    &__link {
+        background-color: $color-bk-link-footer;
+        color: $color-text-secondary;
+    }
+    
+    &__icon {
+        fill: currentColor;
+    }
+    
+    &__text {
+        margin-bottom: 20px;
+    
+        font-weight: 700;
+        text-transform: uppercase;
+        color: $color-text-secondary;
+    }
+}
+

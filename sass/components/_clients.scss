@@ -1,0 +1,36 @@
+.section--clients {
+    padding-bottom: 92px;
+}
+
+.client-list {
+    display: flex;
+
+    &__item:not(:last-child) {
+        margin-right: 30px;
+    }
+    
+    &__icon {
+        fill: currentColor;
+    }
+}
+
+.client-list__link {
+    display: block;
+    width: 170px;
+    height: 92px;
+    padding: 16px 32px;
+    @include bordered($color-social-link);
+    border-radius: 4px;
+    color: $color-social-link;
+
+    @include transition(color);
+    @include transition(border-color);
+
+    &:hover,
+    &:focus {
+        color: $color-accent;
+        border-color: $color-accent;
+    }
+}
+
+

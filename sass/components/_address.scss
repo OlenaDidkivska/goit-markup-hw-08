@@ -1,0 +1,25 @@
+.address {
+    margin-right: 70px;
+    
+    &__item:not(:last-child) {
+        margin-bottom: 9px;
+    }
+}
+
+.address__link {
+    color: $color-text-footer;
+
+    font-style: normal;
+    line-height: 1.71;
+    text-decoration: none;
+    @include transition(color);
+
+    &--color-white {
+        color: $color-text-secondary;
+    }
+    
+    &:hover,
+    &:focus {
+        color: $color-accent;
+    }
+}
