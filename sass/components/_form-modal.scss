@@ -1,66 +1,66 @@
-.form {
-    outline: none;
-    width: 448px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: left;
+// .form {
+//     outline: none;
+//     width: 448px;
+//     margin-left: auto;
+//     margin-right: auto;
+//     text-align: left;
 
-    &__label {
-        margin-bottom: 4px;
-        font-size: 12px;
-        line-height: 1.16;
-        letter-spacing: 0.01em;
-    }
-}
+//     &__label {
+//         margin-bottom: 4px;
+//         font-size: 12px;
+//         line-height: 1.16;
+//         letter-spacing: 0.01em;
+//     }
+// }
 
-.form__field {
-    position: relative;
-    margin-bottom: 10px;
-    display: flex;
-    flex-direction: column;
-    align-content: flex-start;
+// .form__field {
+//     position: relative;
+//     margin-bottom: 10px;
+//     display: flex;
+//     flex-direction: column;
+//     align-content: flex-start;
 
-    &--margin {
-        margin-bottom: 20px;
-    }
-}
+//     &--margin {
+//         margin-bottom: 20px;
+//     }
+// }
 
-%form-input-textarea{
-    margin: 0;
-    @include bordered (rgba(33, 33, 33, 0.2));
-    @include transition (border);
-    border-radius: 4px;
-    resize: none;
-    outline: none;
+// %form-input-textarea{
+//     margin: 0;
+//     @include bordered (rgba(33, 33, 33, 0.2));
+//     @include transition (border);
+//     border-radius: 4px;
+//     resize: none;
+//     outline: none;
 
-    &:focus {
-        @include bordered($color-accent);
-    }
-}
+//     &:focus {
+//         @include bordered($color-accent);
+//     }
+// }
 
-.form__input{
-    @extend %form-input-textarea;
-    padding: 11px 12px 11px 42px;
-}
+// .form__input{
+//     @extend %form-input-textarea;
+//     padding: 11px 12px 11px 42px;
+// }
 
-.form__textarea {
-    @extend %form-input-textarea;  
-    padding: 12px 16px;
+// .form__textarea {
+//     @extend %form-input-textarea;  
+//     padding: 12px 16px;
 
-    &::placeholder {
-        letter-spacing: 0.01em;
-        color: $color-placeholder-textarea;
-    }
-}
+//     &::placeholder {
+//         letter-spacing: 0.01em;
+//         color: $color-placeholder-textarea;
+//     }
+// }
 
-.form__icon {
-    fill: $color-icon-form;
-    position: absolute;
-    top: 50%;
-    left: 12px;
-    @include transition(fill);
+// .form__icon {
+//     fill: $color-icon-form;
+//     position: absolute;
+//     top: 50%;
+//     left: 12px;
+//     @include transition(fill);
 
-    .form__field:focus-within & {
-        fill: $color-accent;
-    }
-}
+//     .form__field:focus-within & {
+//         fill: $color-accent;
+//     }
+// }

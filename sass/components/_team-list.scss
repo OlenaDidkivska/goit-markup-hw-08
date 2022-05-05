@@ -1,38 +1,38 @@
-.section--team {
-    background-color: $color-bk-secondary;
-}
+// .section--team {
+//     // background-color: $color-bk-secondary;
+// }
 
-.team-list {
-    display: flex;
+// .team-list {
+//     // display: flex;
 
-    font-size: 16px;
-    line-height: 1.19;
-    text-align: center;
+//     // font-size: 16px;
+//     // line-height: 1.19;
+//     // text-align: center;
 
-    &__title {
-        margin-bottom: 10px;
-        font-size: 16px;
-        font-weight: 500;
-    }
+//     &__title {
+//         // margin-bottom: 10px;
+//         // font-size: 16px;
+//         // font-weight: 500;
+//     }
 
-    &__bottom-text {
-        margin-bottom: 16px;
-    }
+//     &__bottom-text {
+//         // margin-bottom: 16px;
+//     }
     
-    &__comment {
-        padding-top: 30px;
-        padding-bottom: 30px;
-    }
-}
+//     &__comment {
+//     //     padding-top: 30px;
+//     //     padding-bottom: 30px;
+//     // }
+// }
 
-.team-list__item {
-    background: $color-bk-primary;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
-        0px 1px 1px rgba(0, 0, 0, 0.14),
-        0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 4px;
+// .team-list__item {
+//     // background: $color-bk-primary;
+//     // box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+//     //     0px 1px 1px rgba(0, 0, 0, 0.14),
+//     //     0px 2px 1px rgba(0, 0, 0, 0.2);
+//     // border-radius: 4px;
 
-    &:not(:last-child) {
-        margin-right: 30px;
-    }
-}
+//     // &:not(:last-child) {
+//     //     margin-right: 30px;
+//     // }
+// }
