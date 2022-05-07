@@ -1,4 +1,4 @@
-.button-portfolio__btn, .newsletter__button {
+.page-header__button, .button-portfolio__btn, .newsletter__button {
   cursor: pointer;
   padding: 0;
   margin: 0;
@@ -84,11 +84,43 @@ img {
   border-bottom: 1px solid #ECECEC;
 }
 
+.page-header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 @media screen and (max-width: 767px) {
   .page-header__container {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding-top: 16px;
     padding-bottom: 16px;
   }
+}
+
+.page-header__button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  border: none;
+  background-color: transparent;
+}
+
+.page-header__icon-cross {
+  display: none;
+}
+
+.page-header__button.is-open .page-header__icon-cross {
+  display: block;
+}
+
+.page-header__button.is-open .page-header__icon-menu {
+  display: none;
 }
 
 .logo {
@@ -405,7 +437,7 @@ img {
 
 @media screen and (max-width: 767px) {
   .newsletter__input {
-    max-width: 450px;
+    width: 100%;
     margin-bottom: 20px;
   }
 }

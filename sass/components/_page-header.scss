@@ -3,11 +3,34 @@
         // max-width: 1600px;
         // margin-left: auto;
         // margin-right: auto;
+
+    &__container {
+        display: flex;
+
+        @media screen and (max-width: 767px) {
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 16px;
+            padding-bottom: 16px;
+        }
+    }
+
+    &__button{
+        display: inline-flex;
+        @extend %button;
+        border: none;
+        background-color: $color-bkbtn-menu;
+    }
 }
 
-.page-header__container{
-    @media screen and (max-width: 767px) {
-        padding-top: 16px;
-        padding-bottom: 16px;
+.page-header__icon-cross{
+    display: none;
+
+    .page-header__button.is-open &{
+        display: block;
     }
+}
+
+.page-header__button.is-open .page-header__icon-menu{
+    display: none;
 }
