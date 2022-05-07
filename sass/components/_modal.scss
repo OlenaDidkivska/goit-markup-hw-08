@@ -1,63 +1,66 @@
-// .modal {
-//     position: fixed;
-//     width: 528px;
-//     top: 50%;
-//     left: 50%;
-//     padding: 40px;
+.modal {
+    position: fixed;
 
-//     transform: translate(-50%, -50%) scale(1);
-//     opacity: 1;
-//     background: $color-bk-primary;
+    top: 50%;
+    left: 50%;
+    padding: 40px;
 
-//     @include transition(transform);
-
-//     .backdrop--is-hidden & {
-//         transform: translate(-50%, -50%) scale(0.8);
-//     }
-
-//     &__text {
-//         margin-bottom: 12px;
-//         font-weight: 700;
-//         font-size: 20px;
-//         line-height: 1.15;
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+    background: $color-bk-primary;
     
-//         color: $color-title-primary;
-//     }
-// }
+    @include transition(transform);
 
-// .modal__button {
-//     @extend %button;
-//     @include bordered(rgba(0, 0, 0, 0.1));
-//     display: flex;
-//     position: absolute;
-//     top: 8px;
-//     right: 8px;
+    @media screen and (max-width: 767px) {
+        width: 450px;
+    }
+    
+    .backdrop--is-hidden & {
+        transform: translate(-50%, -50%) scale(0.8);
+    }
 
-//     width: 30px;
-//     height: 30px;
-//     border-radius: 50%;
-//     background: $color-bk-primary;
-//     @include transition(background-color);
+    &__text {
+        margin-bottom: 12px;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 1.15;
 
-//     &:hover,
-//     &:focus {
-//         background-color: $color-bk-primary;
-//     }
-// }
+        color: $color-title-primary;
+    }
+}
 
-// .modal__icon {
-//     position: absolute;
-//     top: 50%;
-//     left: 50%;
-//     transform: translate(-50%, -50%);
-//     width: 18px;
-//     height: 18px;
+.modal__button {
+    @extend %button;
+    @include bordered(rgba(0, 0, 0, 0.1));
+    display: flex;
+    position: absolute;
+    top: 8px;
+    right: 8px;
 
-//     fill: $color-modal-btn;
-//     @include transition(fill);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: $color-bk-primary;
+    @include transition(background-color);
 
-//     .modal__button:hover & {
-//         fill: $color-accent;
-//     }
-// }
+    &:hover,
+    &:focus {
+        background-color: $color-bk-primary;
+    }
+}
 
+.modal__icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 18px;
+    height: 18px;
+
+    fill: $color-modal-btn;
+    @include transition(fill);
+
+    .modal__button:hover & {
+        fill: $color-accent;
+    }
+}
