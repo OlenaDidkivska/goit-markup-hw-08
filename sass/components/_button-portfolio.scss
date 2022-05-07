@@ -1,0 +1,43 @@
+.button-portfolio {
+    display: flex;
+    
+
+    @media screen and (max-width: 767px) {
+        height: 91px;
+        flex-wrap: wrap;
+        align-content: space-around;
+        margin-bottom: 40px;
+        
+    }
+
+    &__item:not(:last-child) {
+        margin-right: 8px;
+    }
+}
+
+.button-portfolio__btn {
+    @extend %button;
+    letter-spacing: 0.03em;
+    padding: 6px 22px;
+    text-align: center;
+
+    border: transparent;
+    border-radius: 4px;
+
+    color: $color-btn-portfolio;
+    background-color: $color-bk-secondary;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+
+    @include transition(background-color);
+    @include transition(color);
+
+    &:hover,
+    &:focus,
+    &--current {
+        color: $color-text-secondary;
+        background-color: $color-accent;
+    }
+}

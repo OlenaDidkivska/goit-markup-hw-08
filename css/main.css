@@ -80,6 +80,10 @@ img {
   height: auto;
 }
 
+.page-header {
+  border-bottom: 1px solid #ECECEC;
+}
+
 @media screen and (max-width: 767px) {
   .page-header__container {
     padding-top: 16px;
@@ -461,7 +465,7 @@ img {
 
 @media screen and (max-width: 767px) {
   .features__container {
-    width: 450px;
+    max-width: 450px;
   }
 }
 
@@ -698,7 +702,7 @@ img {
 
 @media screen and (max-width: 767px) {
   .newsletter__input {
-    width: 450px;
+    max-width: 450px;
     margin-bottom: 20px;
   }
 }
