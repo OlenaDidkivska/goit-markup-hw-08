@@ -1,3 +1,10 @@
+.join {
+    @media (min-width: $tablet) and (max-width: 1199px){
+        display: inline-block;
+        padding-top: 5px;
+    }
+}
+
 .social-links {
     display: inline-flex;
 

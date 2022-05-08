@@ -12,7 +12,11 @@
     @include transition(transform);
 
     @media screen and (max-width: 767px) {
-        max-width: 450px;
+        max-width: 100%;
+    }
+
+    @media screen and (min-width: $tablet) {
+        width: 450px;
     }
     
     .backdrop--is-hidden & {

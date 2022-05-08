@@ -11,6 +11,13 @@
     //     display: flex;
     // }
 
+    &__tablet-container {
+        @media (min-width: $tablet) and (max-width: 1199px) {
+            display: flex;
+            margin-bottom: 60px;
+        }
+    }
+
     &__logo {
         display: inline-block;
         margin-bottom: 20px;
@@ -33,6 +40,10 @@
         font-weight: 700;
         text-transform: uppercase;
         color: $color-text-secondary;
+
+        @media screen and (max-width: 1199px) {
+            text-align: center;
+        }
     }
 
     &__social-links{

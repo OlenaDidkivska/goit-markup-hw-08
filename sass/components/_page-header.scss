@@ -1,17 +1,22 @@
 .page-header {
     border-bottom: 1px solid #ECECEC;
+    position: relative;
         // max-width: 1600px;
         // margin-left: auto;
         // margin-right: auto;
 
     &__container {
         display: flex;
+        align-items: center;
 
         @media screen and (max-width: 767px) {
             justify-content: space-between;
-            align-items: center;
             padding-top: 16px;
             padding-bottom: 16px;
+        }
+
+        @media screen and (min-width: $tablet) {
+            
         }
     }
 
@@ -20,17 +25,42 @@
         @extend %button;
         border: none;
         background-color: $color-bkbtn-menu;
+
+        @media screen and (min-width: $tablet) {
+            display: none;
+        }
     }
+}
+
+.page-header__button--is-open .page-header__icon-menu {
+    display: none;
 }
 
 .page-header__icon-cross{
     display: none;
 
-    .page-header__button.is-open &{
+    .page-header__button--is-open &{
         display: block;
     }
 }
 
-.page-header__button.is-open .page-header__icon-menu{
-    display: none;
+.page-header__menu{
+    @media screen and (max-width: 767px) {
+        position: absolute;
+        display: none;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        margin-left: 88px;
+        align-items: center;
+    }
+
+    &.is-open{
+        display: block;
+    }
 }

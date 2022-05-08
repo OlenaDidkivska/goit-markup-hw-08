@@ -1,11 +1,9 @@
-.button-portfolio {
+.button-portfolio__list {
     display: flex;
-    
+    margin: -8px -4px;
 
     @media screen and (max-width: 767px) {
-        height: 91px;
         flex-wrap: wrap;
-        align-content: space-around;
         margin-bottom: 40px;
         
     }
@@ -13,6 +11,10 @@
     &__item:not(:last-child) {
         margin-right: 8px;
     }
+}
+
+.button-portfolio__item {
+    margin: 8px 4px;
 }
 
 .button-portfolio__btn {

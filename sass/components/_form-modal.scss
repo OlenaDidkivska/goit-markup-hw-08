@@ -9,7 +9,9 @@
         max-width: 370px;
     }
     
-    
+    @media screen and (min-width: $tablet) {
+        width: 370px;
+    }
 
     &__label {
         margin-bottom: 4px;

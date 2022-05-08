@@ -1,4 +1,7 @@
 .newsletter {
+    @media screen and (min-width: $tablet) {
+        text-align: center;
+    }
     // margin-left: auto;
 
     // &__form {
@@ -13,10 +16,15 @@
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
         border-radius: 4px;
         padding: 15px;
-        margin-right: 12px; 
 
         @media screen and (max-width: 767px) {
             width: 100%;
+            margin-bottom: 20px;
+            margin-right: 12px;
+        }
+
+        @media screen and (min-width: $tablet) {
+            width: 450px;
             margin-bottom: 20px;
         }
     }

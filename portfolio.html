@@ -20,30 +20,39 @@
     <header class="page-header">
         <div class="container page-header__container"> 
             <a href="./index.html" class="logo"><span class="logo__heading">Web</span>Studio</a>
-            <nav class="nav-site">
-                <ul class="nav-site__list list">
-                    <li class="nav-site__item"><a href="./index.html" class="nav-site__link">Студия </a>
+            <button type="button" aria-expanded="true" class="page-header__button page-header__button--is-open" data-menu-button
+                aria-controls="page-header__menu">
+                <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+                    <use class="page-header__icon-cross" href="./images/icons.svg#close-menu"></use>
+                    <use class="page-header__icon-menu" href="./images/icons.svg#menu"></use>
+                </svg>
+            </button>
+            <div class="page-header__menu is-open" id="page-header__menu" data-menu>
+                <nav class="nav-site">
+                    <ul class="nav-site__list list">
+                        <li class="nav-site__item"><a href="./index.html" class="nav-site__link">Студия </a>
+                        </li>
+                        <li class="nav-site__item"><a href="./portfolio.html" class="nav-site__link nav-site__link--current">Портфолио</a>
+                        </li>
+                        <li class="nav-site__item"><a href="" class="nav-site__link">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+                <ul class="contact-list list">
+                    <li class="contact-list__item">
+                        <svg class="contact-list__icon" width="16" height="12px">
+                            <use href="./images/icons.svg#envelope"></use>
+                        </svg>
+                        <a href="mailto:info@devstudio.com" class="contact-list__link">info@devstudio.com</a>
                     </li>
-                    <li class="nav-site__item"><a href="./portfolio.html" class="nav-site__link nav-site__link--current">Портфолио</a>
-                    </li>
-                    <li class="nav-site__item"><a href="" class="nav-site__link">Контакты</a>
+                    <li class="contact-list__item">
+                        <svg class="contact-list__icon" width="10" height="16px">
+                            <use href="./images/icons.svg#smartphone"></use>
+                        </svg>
+                        <a href="tel:+380961111111" class="contact-list__link">+38 096 111 11 11</a>
                     </li>
                 </ul>
-            </nav>
-            <ul class="contact-list list">
-                <li class="contact-list__item">
-                    <svg class="contact-list__icon" width="16" height="12px">
-                        <use href="./images/icons.svg#envelope"></use>
-                    </svg>
-                    <a href="mailto:info@devstudio.com" class="contact-list__link">info@devstudio.com</a>
-                </li>
-                <li class="contact-list__item">
-                    <svg class="contact-list__icon" width="10" height="16px">
-                        <use href="./images/icons.svg#smartphone"></use>
-                    </svg>
-                    <a href="tel:+380961111111" class="contact-list__link">+38 096 111 11 11</a>
-                </li>
-            </ul>
+            </div>
         </div>
     </header>
     <main>
@@ -52,7 +61,7 @@
             <div class="container">
                 <h1 class="section__title visually-hidden title">Проекты</h1>
                 <!--Список фильтров-->
-                <ul class="button-portfolio list">
+                <ul class="button-portfolio__list">
                     <li class="button-portfolio__item"><button type="button" class="button-portfolio__btn button-portfolio__btn--current">Все</button></li>
                     <li class="button-portfolio__item"><button type="button" class="button-portfolio__btn">Веб-сайты</button></li>
                     <li class="button-portfolio__item"><button type="button" class="button-portfolio__btn">Приложения</button></li>
@@ -223,7 +232,7 @@
             <div class="join">
                 <p class="page-footer__text">Присоединяйтесь</p>
                 <ul class="social-links">
-                    <li class="social-links__item">
+                    <li class="social-links__item page-footer__social-links">
                         <a href="" class="social-links__link page-footer__link" aria-label="Instagram">
                             <span class="visually-hidden">Instagram</span>
                             <svg class="social-links__icon page-footer__icon">
@@ -272,6 +281,7 @@
             </div>
         </div>
     </footer>
+    <script src="./js/menu.js"></script>
 </body>
 
 </html>
