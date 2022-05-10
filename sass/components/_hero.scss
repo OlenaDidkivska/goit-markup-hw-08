@@ -25,7 +25,12 @@
         padding-bottom: 118px;
     }
 
-    
+    @media screen and (min-width: $desktop) {
+        max-width: 1600px;
+        max-height: 600px;
+        padding-top: 200px;
+        padding-bottom: 200px;
+    }
     
 
     &__title {
@@ -41,6 +46,11 @@
         @media screen and (max-width: 1199px) {
             font-size: 26px;
             line-height: 1.62;
+        }
+
+        @media screen and (min-width: $desktop) {
+            font-size: 44px;
+            line-height: 1.36;
         }
     }
 

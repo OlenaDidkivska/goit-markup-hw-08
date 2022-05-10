@@ -1,12 +1,17 @@
 .newsletter {
-    @media screen and (min-width: $tablet) {
+    @media (min-width: $tablet) and (max-width: 1199px) {
         text-align: center;
     }
-    // margin-left: auto;
 
-    // &__form {
-    //     display: flex;
-    // }
+    @media screen and (min-width: $desktop) {
+        margin-left: auto;
+    }
+
+    &__form {
+        @media screen and (min-width: $desktop) {
+             display: flex;
+        }
+    }
 
     &__input {
         height: 50px;
@@ -19,13 +24,19 @@
 
         @media screen and (max-width: 767px) {
             width: 100%;
+        }
+
+        @media screen and (max-width: 1199px) {
             margin-bottom: 20px;
-            margin-right: 12px;
         }
 
         @media screen and (min-width: $tablet) {
             width: 450px;
-            margin-bottom: 20px;
+        }
+
+        @media screen and (min-width: $desktop) {
+            width: 358px;
+            margin-right: 12px;
         }
     }
 

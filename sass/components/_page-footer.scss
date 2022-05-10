@@ -7,14 +7,24 @@
         text-align: center;
     }
 
-    // &__container {
-    //     display: flex;
-    // }
+    &__container {
+        @media screen and (min-width: $desktop) {
+            display: flex;
+            align-items: center;
+        }
+    }
 
     &__tablet-container {
-        @media (min-width: $tablet) and (max-width: 1199px) {
+        @media (min-width: $tablet) {
             display: flex;
+        }
+
+        @media (min-width: $tablet) and (max-width: 1199px) {
             margin-bottom: 60px;
+        }
+
+        @media (min-width: $desktop) {
+            align-items: center;
         }
     }
 

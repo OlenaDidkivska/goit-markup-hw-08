@@ -9,6 +9,11 @@
     background-color: $color-backdrop;
     opacity: 1;
     @include transition(opacity);
+    overflow-y: scroll;
+
+    @media screen and (max-width: 767px) {
+        padding: 93px 15px;
+    }
 
     &--is-hidden {
         opacity: 0;

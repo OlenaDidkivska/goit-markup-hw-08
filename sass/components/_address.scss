@@ -1,10 +1,13 @@
 .address {
-    // margin-right: 70px;
-    @media screen and (min-width: $tablet) {
+    @media (min-width: $tablet) and (max-width: $desktop) {
         display: inline-block;
         margin-right: 165px;
         margin-left: 76px;
         text-align: center;
+    }
+
+    @media screen and (min-width: $desktop) {
+        margin-right: 70px;
     }
 
     &__item:not(:last-child) {

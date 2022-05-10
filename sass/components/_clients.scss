@@ -12,16 +12,18 @@
             flex-basis: calc((100% - 4 * 15px) / 2)
         }
 
-        @media screen and (min-width: $tablet) {
+        @media (min-width: $tablet) and (max-width: 1199px) {
             margin: 15px;
             flex-basis: calc((100% - 3 * 30px) / 3)
         }
     }
 
 
-    // &__item:not(:last-child) {
-    //     margin-right: 30px;
-    // }
+    &__item:not(:last-child) {
+        @media screen and (min-width: $desktop) {
+            margin-right: 30px;
+        }
+    }
 
     &__icon {
         fill: currentColor;
@@ -45,5 +47,9 @@
     &:focus {
         color: $color-accent;
         border-color: $color-accent;
+    }
+
+    @media screen and (min-width: 1199px) {
+        padding: 16px 32px;
     }
 }

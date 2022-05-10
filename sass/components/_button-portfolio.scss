@@ -1,20 +1,26 @@
 .button-portfolio__list {
     display: flex;
-    margin: -8px -4px;
 
     @media screen and (max-width: 767px) {
+        margin: -8px -4px;
         flex-wrap: wrap;
-        margin-bottom: 40px;
-        
+        margin-bottom: 40px;   
     }
 
-    &__item:not(:last-child) {
-        margin-right: 8px;
+    @media screen and (min-width: $tablet) {
+        margin-bottom: 30px;   
+    }
+
+    @media screen and (min-width: $desktop) {
+        margin-bottom: 50px; 
+        justify-content: center;  
     }
 }
 
 .button-portfolio__item {
-    margin: 8px 4px;
+    @media screen and (max-width: 767px) {
+        margin: 8px 4px;
+    }
 }
 
 .button-portfolio__btn {
@@ -35,6 +41,10 @@
 
     @include transition(background-color);
     @include transition(color);
+
+    @media screen and (min-width: $tablet) {
+        margin-right: 8px;
+    }
 
     &:hover,
     &:focus,

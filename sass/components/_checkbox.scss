@@ -7,6 +7,10 @@
     @media screen and (max-width: 1199px) {
         min-width: 370px;
     }
+
+    @media screen and (min-width: $desktop) {
+        min-width: 425px;
+    }
     
     &__label {
         display: flex;
@@ -16,6 +20,11 @@
         @media screen and (max-width: 1199px) {
             font-size: 12px;
             line-height: 1.17;
+        }
+
+        @media screen and (min-width: $desktop) {
+            font-size: 14px;
+            line-height: 1.71;
         }
     }
 

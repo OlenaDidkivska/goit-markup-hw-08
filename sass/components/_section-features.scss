@@ -1,6 +1,9 @@
 .features {
     @media screen and (min-width: $tablet) {
         display: flex;
+    }
+
+    @media (min-width: $tablet) and (max-width: 1199px) {
         flex-wrap: wrap;
         margin: -15px;
     }
@@ -30,10 +33,14 @@
         @media screen and (max-width: 767px) {
             max-width: 450px;
         }
+
+        @media screen and (min-width: $desktop) {
+            max-width: 270px;
+        }
     }
 
     &__item {
-        @media screen and (min-width: $tablet) {
+        @media (min-width: $tablet) and (max-width: 1199px) {
             margin: 15px;
             flex-basis: calc((100% - 2*30px)/2);
         }
@@ -42,6 +49,10 @@
     &__item:not(:last-child) {
         @media screen and (max-width: 767px) {
             margin-bottom: 30px;
+        }
+
+        @media screen and (min-width: $desktop) {
+            margin-right: 30px;
         }
     }
 
