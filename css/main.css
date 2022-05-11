@@ -14,7 +14,8 @@
   line-height: 1.14;
 }
 
-.page-body.modal-open {
+.page-body.modal-open,
+.page-header__menu.is-open .page-body {
   overflow: hidden;
 }
 
@@ -120,6 +121,7 @@ img {
   display: inline-flex;
   border: none;
   background-color: transparent;
+  z-index: 2;
 }
 
 @media screen and (min-width: 768px) {
@@ -133,6 +135,8 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     background-color: #ffffff;
   }
 }
@@ -144,16 +148,23 @@ img {
 }
 
 .page-header__link {
+  display: inline-block;
   text-decoration: none;
   font-weight: 500;
   font-size: 18px;
   line-height: 1.22;
   letter-spacing: 0.02em;
+  margin-bottom: 10px;
   color: #2196f3;
 }
 
-.page-header__link:not(:last-child) {
+.page-header__link--after::after {
+  content: '';
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
   margin-right: 10px;
+  margin-left: 10px;
 }
 
 .page-header__button.is-open .page-header__icon-menu {
@@ -166,13 +177,32 @@ img {
 
 .page-header__button.is-open .page-header__icon-cross {
   display: block;
-  z-index: 1;
 }
 
 @media screen and (max-width: 767px) {
   .page-header__menu {
-    position: absolute;
     display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 48px 40px 38px;
+    height: 100%;
+    z-index: 1;
+    overflow-y: scroll;
+    background-color: #ffffff;
+  }
+  .page-header__menu.is-open {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
@@ -194,19 +224,6 @@ img {
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
             flex-grow: 1;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .page-header__menu.is-open {
-    display: inline-block;
-    top: 100%;
-    left: 0;
-    max-width: 480px;
-    bottom: 0;
-    padding: 48px 40px;
-    z-index: 1;
-    background-color: #ffffff;
   }
 }
 
@@ -246,6 +263,7 @@ img {
   .nav-site {
     background-color: #ffffff;
     max-width: 480px;
+    margin-bottom: 150px;
   }
 }
 
@@ -318,6 +336,8 @@ img {
 @media screen and (max-width: 767px) {
   .contact-list {
     background-color: #ffffff;
+    margin-bottom: 64px;
+    margin-top: auto;
   }
 }
 
@@ -377,15 +397,6 @@ img {
   color: inherit;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  letter-spacing: 0.02em;
-}
-
-@media screen and (max-width: 767px) {
-  .contact-list__link {
-    font-weight: 500;
-    font-size: 34px;
-    line-height: 1.18;
-  }
 }
 
 @media (min-width: 768px) and (max-width: 1199px) {
@@ -402,14 +413,19 @@ img {
 }
 
 .contact-list__item {
-  color: #757575;
   cursor: pointer;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .contact-list__item {
+    color: #757575;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1199px) {
@@ -424,8 +440,27 @@ img {
   }
 }
 
-.contact-list__item:hover, .contact-list__item:focus {
-  color: #2196f3;
+@media screen and (min-width: 768px) {
+  .contact-list__item:hover, .contact-list__item:focus {
+    color: #2196f3;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .contact-list__item {
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    line-height: 1.17;
+  }
+  .contact-list__item--mail {
+    color: #2196f3;
+    font-size: 34px;
+    margin-bottom: 32px;
+  }
+  .contact-list__item--smartphone {
+    font-size: 24px;
+    color: #757575;
+  }
 }
 
 .hero {

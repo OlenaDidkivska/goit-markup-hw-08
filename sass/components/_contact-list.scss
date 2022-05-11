@@ -2,6 +2,8 @@
     
     @media screen and (max-width: 767px) {
         background-color: $color-bk-primary;
+        margin-bottom: 64px;
+        margin-top: auto;
     }
 
     @media screen and (min-width: $desktop) {
@@ -52,14 +54,7 @@
         text-decoration: none;
         color: inherit;
         @include transition(color);
-        letter-spacing: 0.02em;
-
-        @media screen and (max-width: 767px) {
-            font-weight: 500;
-            font-size: 34px;
-            line-height: 1.18;
-        }
-
+        
         @media (min-width: $tablet) and (max-width: 1199px) {
             font-size: 12px;
             line-height: 1.17;
@@ -68,15 +63,19 @@
         @media (min-width: $tablet) and (min-width: $desktop) {
             font-size: 16px;
         }
+
+        
     }
 }
 
 .contact-list__item {
-    color: $color-text-primary;
     cursor: pointer;
-    display: inline-flex;
-    align-items: center;
 
+    @media screen and (min-width: $tablet) {
+        color: $color-text-primary;
+        display: inline-flex;
+        align-items: center;
+    }
 
     &:not(:last-child) {
         @media (min-width: $tablet) and (max-width: 1199px) {
@@ -92,6 +91,27 @@
 
     &:hover,
     &:focus {
-        color: $color-accent;
+        @media screen and (min-width: $tablet) {
+            color: $color-accent;
+        }
     }
+
+    @media screen and (max-width: 767px) {
+        font-weight: 500;
+        letter-spacing: 0.02em;
+        line-height: 1.17;
+
+        &--mail {
+        color: $color-accent;
+        font-size: 34px;
+        margin-bottom: 32px;
+        }
+
+        &--smartphone {
+            font-size: 24px;
+            color: $color-text-primary;
+        }
+    }
+
+    
 }
