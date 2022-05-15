@@ -9,7 +9,7 @@
     line-height: 1.14;
 
     &.modal-open, 
-    .page-header__menu.is-open & {
+    &.menu-open {
         overflow: hidden;
     }
 }

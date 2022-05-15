@@ -5,7 +5,7 @@
     margin-bottom: 30px;
 
     @media screen and (max-width: 1199px) {
-        min-width: 370px;
+        max-width: 370px;
     }
 
     @media screen and (min-width: $desktop) {
@@ -20,6 +20,7 @@
         @media screen and (max-width: 1199px) {
             font-size: 12px;
             line-height: 1.17;
+            flex-wrap: wrap;
         }
 
         @media screen and (min-width: $desktop) {

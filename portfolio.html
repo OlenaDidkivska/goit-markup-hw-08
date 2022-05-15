@@ -39,18 +39,24 @@
                     </ul>
                 </nav>
                 <ul class="contact-list">
-                    <li class="contact-list__item">
-                        <svg class="contact-list__icon contact-list__icon--mail" width="16" height="12px">
+                    <li class="contact-list__item contact-list__item--mail">
+                        <svg class="contact-list__icon contact-list__icon--mail">
                             <use href="./images/icons.svg#envelope"></use>
                         </svg>
                         <a href="mailto:info@devstudio.com" class="contact-list__link">info@devstudio.com</a>
                     </li>
-                    <li class="contact-list__item">
-                        <svg class="contact-list__icon contact-list__icon--smartphone" width="10" height="16px">
+                    <li class="contact-list__item contact-list__item--smartphone">
+                        <svg class="contact-list__icon contact-list__icon--smartphone">
                             <use href="./images/icons.svg#smartphone"></use>
                         </svg>
                         <a href="tel:+380961111111" class="contact-list__link">+38 096 111 11 11</a>
                     </li>
+                </ul>
+                <ul class="page-header__links">
+                    <li page-header__links-item><a href="" class="page-header__link page-header__link--after">Instagram</a></li>
+                    <li page-header__links-item><a href="" class="page-header__link page-header__link--after">Twitter</a></li>
+                    <li page-header__links-item><a href="" class="page-header__link page-header__link--after">Facebook</a></li>
+                    <li page-header__links-item><a href="" class="page-header__link">LinkedIn</a></li>
                 </ul>
             </div>
         </div>
@@ -73,7 +79,9 @@
                     <li class="project-list__item">
                         <a href="" class="project-list__link">
                             <div class="project-list__overlay">
-                                <img class="project-list__img"
+                                <img loading="lazy"
+                                    srcset="./images/project1.jpg 1x, ./images/project1.jpg 2x"
+                                    class="project-list__img"
                                     src="images/project1.jpg" 
                                     alt="Veb-site Techno-crack" 
                                     width="370">
@@ -88,7 +96,9 @@
                     <li class="project-list__item">
                         <a href="" class="project-list__link">
                             <div class="project-list__overlay">
-                                <img class="project-list__img"
+                                <img loading="lazy"
+                                    srcset="./images/project2.jpg 1x, ./images/project2.jpg 2x"
+                                    class="project-list__img"
                                     src="images/project2.jpg" 
                                     alt="Poster New Orlean vs Golden Star" 
                                     width="370">
@@ -103,7 +113,9 @@
                     <li class="project-list__item" >
                         <a href="" class="project-list__link">
                             <div class="project-list__overlay">
-                                <img class="project-list__img"
+                                <img loading="lazy"
+                                    srcset="./images/project3.jpg 1x, ./images/project3.jpg 2x"
+                                    class="project-list__img"
                                     src="images/project3.jpg" 
                                     alt="Seafood Restaurant" 
                                     width="370">
@@ -118,7 +130,9 @@
                     <li class="project-list__item">
                         <a href="" class="project-list__link">
                             <div class="project-list__overlay">
-                                <img class="project-list__img"
+                                <img loading="lazy"
+                                    srcset="./images/project4.jpg 1x, ./images/project4.jpg 2x"
+                                    class="project-list__img"
                                     src="images/project4.jpg" 
                                     alt="Prime Project" 
                                     width="370">
@@ -133,7 +147,9 @@
                     <li class="project-list__item">
                         <a href="" class="project-list__link">
                             <div class="project-list__overlay">
-                                <img class="project-list__img"
+                                <img loading="lazy"
+                                    srcset="./images/project5.jpg 1x, ./images/project5.jpg 2x"
+                                    class="project-list__img"
                                     src="images/project5.jpg" 
                                     alt="Project Boxes" 
                                     width="370">
@@ -148,7 +164,9 @@
                     <li class="project-list__item">
                         <a href="" class="project-list__link">
                             <div class="project-list__overlay">
-                                <img class="project-list__img"
+                                <img loading="lazy"
+                                    srcset="./images/project6.jpg 1x, ./images/project6.jpg 2x"
+                                    class="project-list__img"
                                     src="images/project6.jpg" 
                                     alt="Inspiration has no Borders" 
                                     width="370">
@@ -163,7 +181,9 @@
                     <li class="project-list__item">
                         <a href="" class="project-list__link">
                             <div class="project-list__overlay">
-                                <img class="project-list__img"
+                                <img loading="lazy"
+                                    srcset="./images/project7.jpg 1x, ./images/project7.jpg 2x"
+                                    class="project-list__img"
                                     src="images/project7.jpg" 
                                     alt="Limited Edition" 
                                     width="370">
@@ -178,7 +198,9 @@
                     <li class="project-list__item">
                         <a href="" class="project-list__link">
                             <div class="project-list__overlay">
-                                <img class="project-list__img"
+                                <img loading="lazy"
+                                    srcset="./images/project8.jpg 1x, ./images/project8.jpg 2x"
+                                    class="project-list__img"
                                     src="images/project8.jpg" 
                                     alt="Project LAB" 
                                     width="370">
@@ -193,7 +215,12 @@
                     <li class="project-list__item">
                         <a href="" class="project-list__link">
                             <div class="project-list__overlay">
-                                <img class="project-list__img" src="images/project9.jpg" alt="Growing Business" width="370">
+                                <img loading="lazy"
+                                    srcset="./images/project9.jpg 1x, ./images/project9.jpg 2x"
+                                    class="project-list__img" 
+                                    src="images/project9.jpg" 
+                                    alt="Growing Business" 
+                                    width="370">
                                 <p class="project-list__popup text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
                                     посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                             </div>

@@ -97,17 +97,20 @@
     font-size: 18px;
     line-height: 1.56;
     color: $color-text-secondary;
-    transform: translateY(100%);
+    transform: translateY(101%);
     overflow: hidden;
 
     @include transition(transform);
 
-    @media screen and (max-width: 767px) {
-        padding: 77px 24px;
+    @media screen and (max-width: 350px) {
+        padding: 24px;
+        overflow-y: scroll;
     }
 
-    @media screen and (min-width: $tablet) {
-        padding: 49px 24px;
+    @media (min-width: 351px) {
+        padding: 24px;
+        display: flex;
+        align-items: center;
     }
 
     .project-list__item:hover & {
