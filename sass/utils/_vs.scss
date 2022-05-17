@@ -3,11 +3,6 @@
     color: $color-text-primary;
     font-family: Roboto, sans-serif;
 
-    font-weight: 400;
-    letter-spacing: 0.03em;
-    font-size: 14px;
-    line-height: 1.14;
-
     &.modal-open, 
     &.menu-open {
         overflow: hidden;

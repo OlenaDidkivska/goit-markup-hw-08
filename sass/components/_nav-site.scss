@@ -33,15 +33,13 @@
     display: block;
     color: $color-title-primary;
     @include transition(color);
-    font-weight: 500;
 
     @media screen and (max-width: 767px) {
-        font-size: 40px;
-        line-height: 1.18;
-        letter-spacing: 0.02em;
+        @include font (500, 40px, 1.18, 0.02em);
     }
 
     @media screen and (min-width: $tablet) {
+        @include font (500, 14px, 1.14, 0.02em);
         position: relative;
         padding-top: 32px;
         padding-bottom: 32px;

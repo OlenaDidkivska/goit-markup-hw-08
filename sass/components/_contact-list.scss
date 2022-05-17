@@ -61,12 +61,11 @@
         font-weight: 500;
         
         @media (min-width: $tablet) and (max-width: 1199px) {
-            font-size: 12px;
-            line-height: 1.17;
+            @include font (500, 12px, 1.17, 0.02em);
         }
 
         @media (min-width: $tablet) and (min-width: $desktop) {
-            font-size: 16px;
+            @include font (500, 16px, 1.17, 0.02em);
         }
 
         
@@ -115,20 +114,16 @@
         }
     }
 
-    @media screen and (max-width: 767px) {
-        letter-spacing: 0.02em;
-        line-height: 1.17;
-    }
-
     @media (min-width: 411px) and (max-width: 767px) {
         &--mail {
         color: $color-accent;
+        @include font (500, 34px, 1.18, 0.02em);
         font-size: 34px;
         margin-bottom: 32px;
         }
 
         &--smartphone {
-            font-size: 24px;
+            @include font (500, 24px, 1.17, 0.02em);
             color: $color-text-primary;
         }
     }

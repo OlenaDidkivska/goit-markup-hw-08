@@ -18,14 +18,12 @@
         align-items: center;
 
         @media screen and (max-width: 1199px) {
-            font-size: 12px;
-            line-height: 1.17;
+            @include font (400, 12px, 1.17, 0.03em);
             flex-wrap: wrap;
         }
 
         @media screen and (min-width: $desktop) {
-            font-size: 14px;
-            line-height: 1.71;
+            @include font (400, 14px, 1.71, 0.03em);
         }
     }
 

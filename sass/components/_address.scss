@@ -27,8 +27,8 @@
 .address__link {
     color: $color-text-footer;
 
+    @include font (400, 14px, 1.71, 0.03em);
     font-style: normal;
-    line-height: 1.71;
     text-decoration: none;
     @include transition(color);
 

@@ -33,9 +33,7 @@
 
     &__text {
         margin-bottom: 12px;
-        font-weight: 700;
-        font-size: 20px;
-        line-height: 1.15;
+        @include font (700, 20px, 1.15, 0.03em);
 
         color: $color-title-primary;
     }
