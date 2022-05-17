@@ -58,6 +58,7 @@
         text-decoration: none;
         color: inherit;
         @include transition(color);
+        font-weight: 500;
         
         @media (min-width: $tablet) and (max-width: 1199px) {
             font-size: 12px;
@@ -115,7 +116,6 @@
     }
 
     @media screen and (max-width: 767px) {
-        font-weight: 500;
         letter-spacing: 0.02em;
         line-height: 1.17;
     }

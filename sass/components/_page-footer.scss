@@ -57,6 +57,8 @@
     }
 
     &__social-links{
+        fill: $color-soclink-footer;
+
         @media screen and (max-width: 767px) {
             margin-bottom: 60px;
         }

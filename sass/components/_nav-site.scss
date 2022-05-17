@@ -33,9 +33,9 @@
     display: block;
     color: $color-title-primary;
     @include transition(color);
+    font-weight: 500;
 
     @media screen and (max-width: 767px) {
-        font-weight: 500;
         font-size: 40px;
         line-height: 1.18;
         letter-spacing: 0.02em;
